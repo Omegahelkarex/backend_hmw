@@ -66,13 +66,13 @@ const doctorSchema = new Schema(
 
             speciality : {
                 type : String,
-                unique : true,
+                
                 required : true,
             },
 
             qualification : {
                 type : String,
-                unique : true,
+                
                 required : true,
             },
 
