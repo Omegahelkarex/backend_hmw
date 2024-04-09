@@ -76,6 +76,11 @@ const doctorSchema = new Schema(
                 required : true,
             },
 
+            workinghour : {
+                type : String,
+                required : true, 
+            }
+
             
 
 

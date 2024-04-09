@@ -52,12 +52,24 @@ const hospitalSchema = new Schema(
             required : true,
         },
 
-        bedavailable : {
-            type : Schema.Types.ObjectId,// ask tushar about here 
-            ref : "Bed",
-        }, 
+        bed : [
+            {
+                bedid : {
+                    type : String,
+                    required : true,
+                    unique : true,
+                }, 
 
-        doctoravailable :{
+                availability : {
+                    type : Boolean,
+                    default : false,
+
+                }
+
+            }
+        ],
+
+        doctor :{
             type : Schema.Types.ObjectId,
             ref : "Doctors"
         },
