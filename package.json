@@ -1,11 +1,12 @@
 {
   "name": "hospital-management-system",
   "version": "1.0.0",
-  "description": "",
+  "description": "backend for hospital management website",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" :"node index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Piyush Chatterjee",
@@ -13,5 +14,8 @@
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
