@@ -100,3 +100,5 @@ const hospitalSchema = new Schema(
 
 export const Hospital = mongoose.model("Hospital", hospitalSchema);
 
+// this is a example
+
