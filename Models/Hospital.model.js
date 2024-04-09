@@ -76,7 +76,8 @@ const hospitalSchema = new Schema(
 
         facilites : {
             type : String,
-            enum : ["facilities1", "facilities2", "facilities3"] // need to reasearch on the various facilities that have to be mentioned 
+            enum : ["Emergency care", "Inpatient services ", "Diagnostic services", "Treatment services", "Outpatient clinic",
+                      "Specialized department", "Maternity and childcare", "Pharmacy", "Rehabilitation services", "Telemedicine services", "General checkup"]  
         },
 
         hospitalphotourl :{
