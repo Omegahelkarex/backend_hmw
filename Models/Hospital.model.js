@@ -53,8 +53,8 @@ const hospitalSchema = new Schema(
         },
 
         bedavailable : {
-            type : Schema.Types.ObjectId,
-            ref : "Beds",
+            type : Schema.Types.ObjectId,// ask tushar about here 
+            ref : "Bed",
         }, 
 
         doctoravailable :{
