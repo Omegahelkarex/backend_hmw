@@ -104,7 +104,7 @@ const hospitalSchema = new Schema(
 
 );
 
-hospitalSchema.pre("save" async function (next) {
+hospitalSchema.pre("save", async function (next) {
     if(this.isModified("password")){
         this.password = await bcrypt.hash(this.password, 8);
     }
