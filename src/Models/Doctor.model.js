@@ -12,6 +12,11 @@ const doctorSchema = new Schema(
                 trim : true,
             },
 
+            doctorphoto: {
+                type: String,
+                required: true,
+            },
+
             gender : {
                 type : String,
                 enum : ["male", "female","other"],

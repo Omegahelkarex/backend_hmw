@@ -35,6 +35,11 @@ const patientSchema = new Schema(
                 unique : true,
             },
 
+            patientphoto : {
+                type: String,
+                required: true,
+            },
+
             address : {
                 street: {
                     type: String,
