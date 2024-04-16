@@ -69,7 +69,6 @@ const hospitalSchema = new Schema(
 
             }
         ],
-
       
         facilites : {
             type : String,
@@ -113,7 +112,7 @@ hospitalSchema.methods.comparePassword = async function (password) {
 hospitalSchema.methods.generateAccessToken = async function () {
     return await jwt.sign(
         {_id: this._id, email:this.email},
-        process.env.ACCESS_TOKEN_SCERET,
+        process.env.ACCESS_TOKEN_SECRET,
         {expiresIn : process.env.ACCESS_TOKEN_EXPIRY}
     );
 };
