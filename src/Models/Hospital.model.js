@@ -70,11 +70,7 @@ const hospitalSchema = new Schema(
             }
         ],
 
-        doctor :{
-            type : Schema.Types.ObjectId,
-            ref : "Doctors"
-        },
-
+      
         facilites : {
             type : String,
             enum : ["Emergency care", "Inpatient services ", "Diagnostic services", "Treatment services", "Outpatient clinic",

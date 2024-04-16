@@ -17,12 +17,14 @@ app.use(cookieparser())
 // routes 
 
 import userRouter from "./routes/User.router.js"
+import hospitalRouter from "./routes/Hospital.router.js"
 
 
 
 
 // routes declaration 
 app.use("/api/v1/users", userRouter)
+app.use("api/v1/hospitals", hospitalRouter)
 
 
 export {app};
